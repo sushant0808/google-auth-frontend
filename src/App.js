@@ -22,7 +22,7 @@ function App() {
             Accept: "application/json",
             "Content-Type": "application/json",
             "Access-Control-Allow-Credentials": true,
-            "Access-Control-Allow-Origin": 'https://google-auth-backend-eight.vercel.app'
+            "Access-Control-Allow-Origin": 'https://google-auth-frontend-fu47.vercel.app'
           }
         })).json())
 
