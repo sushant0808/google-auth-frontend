@@ -18,12 +18,12 @@ function App() {
         const response = await ((await fetch(`${process.env.REACT_APP_SERVER_URL}/login-success`, {
           method: "GET",
           credentials: "include",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Credentials": true,
-            "Access-Control-Allow-Origin": 'https://google-auth-frontend-fu47.vercel.app'
-          }
+          // headers: {
+          //   Accept: "application/json",
+          //   "Content-Type": "application/json",
+          //   "Access-Control-Allow-Credentials": true,
+          //   "Access-Control-Allow-Origin": 'https://google-auth-frontend-fu47.vercel.app'
+          // }
         })).json())
 
         console.log('response', response);
