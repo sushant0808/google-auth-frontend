@@ -14,6 +14,8 @@ const Login = () => {
         window.open(`${process.env.REACT_APP_SERVER_URL}/auth/github`, "_self")
     }
 
+    console.log("hm")
+
     return (
         <div className='login'>
             <h1 className='loginTitle'>Choose a login method</h1>
