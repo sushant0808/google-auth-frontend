@@ -11,6 +11,7 @@ function App() {
   const [authenticatedUser, setAuthenticatedUser] = useState({});
 
   useEffect(() => {
+    console.log("useefectc called");
     const getAuthenticatedUser = async () => {
       try {
         console.log("jaaa", process.env.REACT_APP_SERVER_URL)
@@ -39,6 +40,10 @@ function App() {
 
     getAuthenticatedUser()
   }, [])
+
+  useEffect(() => {
+    console.log("Auth user", authenticatedUser)
+  }, [authenticatedUser])
 
   const checkIfUserExist = () => {
     if (Object.keys(authenticatedUser).length) {
