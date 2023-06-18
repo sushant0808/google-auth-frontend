@@ -24,6 +24,8 @@ function App() {
           }
         })).json())
 
+        console.log('response', response);
+
         if (response.status === 200) {
           setAuthenticatedUser(response.user);
         }
