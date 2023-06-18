@@ -12,6 +12,7 @@ function App() {
   useEffect(() => {
     const getAuthenticatedUser = async () => {
       try {
+        console.log("jaaa", process.env.REACT_APP_SERVER_URL)
         const response = await ((await fetch(`${process.env.REACT_APP_SERVER_URL}/auth/login-success`, {
           method: "GET",
           credentials: "include",
